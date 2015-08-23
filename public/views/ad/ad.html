@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Starter Node and Angular</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/side-menu.css">
+     <!-- custom styles -->
+    <link href="../../libs/flat-ui/dist/css/flat-ui.css" rel="stylesheet">
+
+
+    <link href="../../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- JS -->
+
+    <!--<script src="../../js/plugins/morris/raphael.min.js"></script>-->
+    <!--<script src="../../js/plugins/morris/morris.min.js"></script>-->
+    <!--<script src="../../js/plugins/morris/morris-data.js"></script>-->
+
+    <script src="../../libs/flat-ui/dist/js/vendor/jquery.min.js"></script>
+    <script src="../../libs/flat-ui/dist/js/vendor/video.js"></script>
+    <script src="../../libs/flat-ui/dist/js/flat-ui.min.js"></script>
+    <script src="../../libs/flat-ui/docs/assets/js/application.js"></script>
+
+
+    <script src="../../libs/angular/angular.min.js"></script>
+    <script src="../../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="../../js/controllers/MainCtrl.js"></script>
+    <script src="../../js/controllers/NerdCtrl.js"></script>
+    <script src="../../js/services/NerdService.js"></script>
+    <script src="../../js/controllers/GeekCtrl.js"></script>
+    <script src="../../js/services/GeekService.js"></script>
+    <script src="../../js/appRoutes.js"></script>
+    <script src="../../js/app.js"></script>
+</head>
+<body>
+    <div>
+        <div id="wrapper">
+            <div>
+                <ul class="nav navbar-nav side-nav dashboard-nav">
+                    <li class="nav-list nav-list-head">
+                        <a href="index.html" style="font-size:16px !important; color:#fff">WePromote</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="index.html"><i class="fa fa-fw fa-comments"></i>微信公众号</a>
+                    </li>
+                    <li class="nav-list-sub active">
+                        <a href="charts.html">#温尼伯情报站</a>
+                    </li>
+                    <li class="nav-list-sub">
+                        <a href="tables.html">#温尼伯吃喝玩乐</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-envelope-o"></i> 站内信</a>
+                    </li>
+                    <li class="nav-list-sub">
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-circle" style="color:#c00"></i>系统信息</a>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-circle" style="color:#222"></i>系统公告</a>
+                    </li>
+                </ul>
+                <!--<div>-->
+                    <!--<ul class="sidebar-nav">-->
+                        <!--<li class="sidebar-brand"><a href="#">LOGO</a></li>-->
+                        <!--<li><a href="#">公众号 1</a></li>-->
+                        <!--<li><a href="#">公众号 2</a></li>-->
+                        <!--<li><a href="#">公众号 3</a></li>-->
+                        <!--<li class="sidebar-brand contact-us"><a href="#">联系客服</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="user-profile">-->
+                    <!--<img src="../img/dashboard/logo.jpg" class="user-icon img-circle" height="50">-->
+                <!--</div>-->
+                <div class="dashboard-nav-bottom">
+                    <div class="dashboard-nav-bottom-left"></div>
+                    <div class="dashboard-nav-bottom-left"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="dashboard-subnav">
+                <div class="dashboard-subnav-left"><h1>自主接单</h1></div>
+                <div class="dashboard-subnav-right">
+                    <div class="dashboard-subnav-button"><a href="views/dashBoard.html">微信主页</a></div>
+                    <div class="dashboard-subnav-button"><a href="views/ad/exchange.html">流量交换</a></div>
+                    <div class="dashboard-subnav-button"><a href="views/ad/ad.html">自主接单</a></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="page-wrapper">
+                <div class="ad-dashboard">
+                    <!--<div class="ad-header">-->
+                        <!--<h1 class="page-header">-->
+                            <!--广告接单 &lt;!&ndash;<small>Statistics Overview</small>&ndash;&gt;-->
+                        <!--</h1>-->
+                            <!--&lt;!&ndash;<ol class="breadcrumb">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li class="active">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<i class="fa fa-dashboard"></i> Dashboard&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</ol>&ndash;&gt;-->
+                    <!--</div>-->
+                    <!-- /.row -->
+
+                    <!--<div class="row">-->
+                    <!--<div class="col-lg-12">-->
+                    <!--<div class="alert alert-info alert-dismissable">-->
+                    <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
+                    <!--<i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!-- /.row -->
+
+                    <div class="ad-message">
+                        <div class="ad-message-title">
+                            <h1> 没有人比你更了解你的客户！ </h1>
+                        </div>
+                        <div class="ad-message-p">
+                            <p>
+                                在您的客户需要效果统计并希望按效果付费时，您可以创建约定的广告账号帮助他们在您的公众号推广。
+                            </p>
+                            <p>
+                                我们会提前把预估的流量统计告诉您，让您能轻松谈判。
+                            </p>
+                            <p>
+                                您的客户在您的公众号使用WePromote推广，我们不会收取任何费用。
+                            </p>
+                        </div>
+                        <div class="ad-message-button">
+                            <button class="btn btn-success">新增广告客户</button>
+                        </div>
+                    </div>
+
+
+                    <div class="ad-panel">
+                        <div class="ad-panel-div panel">
+                            <div class="panel-heading">
+                                <div class="panel-heading-right">
+                                    <h2>3</h2>
+                                    <h3>接广告数</h3>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="ad-panel-div panel panel-green">
+                            <div class="panel-heading">
+                                <div class="panel-heading-right">
+                                    <h2>2</h2>
+                                    <h3>运行广告</h3>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="ad-panel-div panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="panel-heading-right">
+                                    <h2>792.5</h2>
+                                    <h3>总收益（RMB）</h3>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="ad-panel-div panel panel-red">
+                            <div class="panel-heading">
+                                <div class="panel-heading-right">
+                                    <h2>26％</h2>
+                                    <h3>平均转化率</h3>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- /.row -->
+                    <div class="ad-chart">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>季度收益表</h3>
+                            </div>
+                            <div class="panel-body">
+                                <canvas id="myChart" width="650" height="300"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-element-head">广告列表</div>
+                    <div class="ad-element">
+                        <div class="panel panel-default">
+                            <!--<div class="panel-heading">-->
+                                <!--<h3 class="panel-title"><i class="fa fa-bar-chart-o fa-table"></i> 广告列表</h3>-->
+                            <!--</div>-->
+                            <div class="panel-body">
+                                <div class="ad-element-top">
+                                    <div class="ad-element-img"><img src="../../img/weChatPage.png"></div>
+                                    <div class="ad-element-title">北美华人交友</div>
+                                    <div class="ad-element-from">两颗红豆</div>
+                                    <div class="ad-element-switch">
+                                        <input type="checkbox" checked data-toggle="switch" name="info-square-switch" data-on-color="danger" id="switch-07" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="ad-element-bottom">
+                                    <div class="ad-element-bottom-heading">
+                                        <div>展示量</div>
+                                        <div>点击量</div>
+                                        <div>效果</div>
+                                        <div>转化率</div>
+                                        <div>本周受益</div>
+                                        <div>总收益</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="ad-element-bottom-data">
+                                        <div>1264</div>
+                                        <div>178</div>
+                                        <div>36</div>
+                                        <div>24.8%</div>
+                                        <div>33</div>
+                                        <div>168.5</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-element">
+                        <div class="panel panel-default">
+                            <!--<div class="panel-heading">-->
+                            <!--<h3 class="panel-title"><i class="fa fa-bar-chart-o fa-table"></i> 广告列表</h3>-->
+                            <!--</div>-->
+                            <div class="panel-body">
+                                <div class="ad-element-top">
+                                    <div class="ad-element-img"><img src="../../img/logo2.png"></div>
+                                    <div class="ad-element-title">加拿大移民</div>
+                                    <div class="ad-element-from">VisaMax</div>
+                                    <div class="ad-element-switch">
+                                        <input type="checkbox" checked data-toggle="switch" name="info-square-switch" data-on-color="danger" id="switch-07" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="ad-element-bottom">
+                                    <div class="ad-element-bottom-heading">
+                                        <div>展示量</div>
+                                        <div>点击量</div>
+                                        <div>效果</div>
+                                        <div>转化率</div>
+                                        <div>本周受益</div>
+                                        <div>总收益</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="ad-element-bottom-data">
+                                        <div>886</div>
+                                        <div>132</div>
+                                        <div>18</div>
+                                        <div>28.8%</div>
+                                        <div>42</div>
+                                        <div>228.5</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-element">
+                        <div class="panel panel-default">
+                            <!--<div class="panel-heading">-->
+                            <!--<h3 class="panel-title"><i class="fa fa-bar-chart-o fa-table"></i> 广告列表</h3>-->
+                            <!--</div>-->
+                            <div class="panel-body">
+                                <div class="ad-element-top">
+                                    <div class="ad-element-img"><img src="../../img/pac.jpg"></div>
+                                    <div class="ad-element-title">新春装上市</div>
+                                    <div class="ad-element-from">派克兰帝有限责任公司</div>
+                                    <div class="ad-element-switch">
+                                        <input type="checkbox" checked data-toggle="switch" name="info-square-switch" data-on-color="danger" id="switch-07" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="ad-element-bottom">
+                                    <div class="ad-element-bottom-heading">
+                                        <div>展示量</div>
+                                        <div>点击量</div>
+                                        <div>效果</div>
+                                        <div>转化率</div>
+                                        <div>本周受益</div>
+                                        <div>总收益</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="ad-element-bottom-data">
+                                        <div>1356</div>
+                                        <div>289</div>
+                                        <div>152</div>
+                                        <div>17.3%</div>
+                                        <div>156</div>
+                                        <div>396</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../libs/chartjs/Chart.js"></script>
+    <script>
+$(document).ready(function() {
+    var data = {
+        labels: ["2月2日", "2月16日", "3月2日", "3月16日", "3月30日", "4月13日", "4月27日"],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [65, 59, 80, 81, 56, 55, 40]
+            },
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [28, 48, 40, 19, 86, 27, 90]
+            }
+        ]
+    };
+
+    var ctx = $("#myChart").get(0).getContext("2d");
+    var myNewChart = new Chart(ctx).Line(data);
+    //myNewChart.create();
+
+});
+    </script>
+</body>
+</html>

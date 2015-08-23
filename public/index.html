@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Starter Node and Angular</title>
+
+	<!-- CSS -->
+	<link href="libs/flat-ui/dist/css/flat-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/side-menu.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!-- ANGULAR CUSTOM -->
+	<script src="libs/flat-ui/dist/js/vendor/jquery.min.js"></script>
+	<script src="libs/flat-ui/dist/js/vendor/video.js"></script>
+	<script src="libs/flat-ui/dist/js/flat-ui.min.js"></script>
+	<script src="libs/flat-ui/docs/assets/js/application.js"></script>
+
+
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/controllers/NerdCtrl.js"></script>
+	<script src="js/services/NerdService.js"></script>
+	<script src="js/controllers/GeekCtrl.js"></script>
+	<script src="js/services/GeekService.js"></script>
+	<script src="js/appRoutes.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body class="index-body" ng-app="sampleApp">
+<div class="index-header">
+
+	<div class="index-nav">
+		<div class="index-nav-container">
+			<div class="index-nav-left">
+				<img src="../img/logo-white-heng.png"/>
+			</div>
+			<div class="index-nav-right">
+				<div class="index-nav-button" onclick="javascript:showSignin();">登录</div>
+				<div class="index-nav-button" onclick="javascript:showSignup();">注册</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div>
+		<div class="index-header-container">
+			<div class="index-header-title">
+				<h1>这是您获取微信红利的工具</h1>
+				<h2>微信公众号流量交互</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="index-sign">
+
+		<div class="index-sign-container">
+			<div class="index-signin" id="index-signin">
+				<h2>WePromote是帮助运营的微信公众账号实现推广或者变现的工具！</h2>
+				<h3 id="message_login" style="color:darkred;"></h3>
+				<div class="index-sign-form">
+					<form>
+						<div class="">
+							<div class="index-sign-div"><input type="email" id="email_login" placeholder="Email"/></div>
+							<div class="index-sign-div"><input type="password" id="password_login" placeholder="password"/></div>
+							<div class="index-sign-div"><input type="submit" onclick="login();" value="登录" /></div>
+							<div class="clear"></div>
+						</div>
+					</form>
+				</div>
+				<h3>现在免费注册可以添加无限多个微信公众号</h3>
+			</div>
+			<div class="index-signup" id="index-signup">
+				<h2>WePromote是帮助运营的微信公众账号实现推广或者变现的工具！</h2>
+				<h3 id="message_reg" style="color:darkred;"></h3>
+				<div class="index-sign-form">
+					<form>
+						<div class="">
+							<div class="index-sign-div"><input type="email" id="email_reg" placeholder="Email"/></div>
+							<div class="index-sign-div"><input type="password" id="password_reg" placeholder="password"/></div>
+							<div class="index-sign-div-select">
+								<select class="form-control select select-primary select-block mbl" id="type">
+									<option value="0">微信主</option>
+									<option value="1">广告主</option>
+								</select>
+							</div>
+							<div class="index-sign-div"><input type="submit" onclick="reg();" value="免费注册" /></div>
+							<div class="clear"></div>
+						</div>
+					</form>
+				</div>
+				<h3>现在免费注册可以添加无限多个微信公众号</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="index-video">
+	<div class="index-video-container">
+		<div class="index-video-left">
+			<div class="index-video-user">
+				<div class="index-video-user-left">
+					<img src="/img/index/index-user.jpg" />
+				</div>
+				<div class="index-video-user-right">
+					<h2>北京众乐科技运营</h2>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div><p>“很高兴我们能使用WePromote作为我们微信号推广工具，除了能以最有效性价比高的方式曝光推广我们的微信号，他还能兼容其他微信第三方开发工具，自动化交互流量的方式让我们降低了很多人力成本！”</p></div>
+		</div>
+		<div class="index-video-right">
+			<video class="video-js" preload="auto" poster="../video/index-video.png" data-setup="{}">
+
+				<!--<source src="../video/index-video.ogg" type="video/ogg">-->
+				<source src="../video/index-video.webm" type="video/webm">
+				<source src="../video/index-video.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="index-content">
+	<div class="index-content-container">
+		<div class="index-content-nav" id="index-content-nav">
+			<a href="#index-content1"><div class="index-content-nav-button"><h2>为什么选择智微推</h2></div></a>
+			<a href="#index-content2"><div class="index-content-nav-button"><h2>流量交换</h2></div></a>
+			<a href="#index-content3"><div class="index-content-nav-button"><h2>自媒体接单</h2></div></a>
+			<a href="#index-content4"><div class="index-content-nav-button index-content-nav-button-last"><h2>邀请奖励</h2></div></a>
+			<div class="clear"></div>
+		</div>
+		<div class="index-box" id="index-content1">
+			<div><h1>为什么选择智微推</h1></div>
+			<div><img src="/img/index/index1.png" /></div>
+			<div class="index-box-content">
+				<div class="index-box-left">
+					<h2>为什么选择智微推</h2>
+				</div>
+				<div class="index-box-right">
+					<p>完整独立的数据统计服务，帮助自媒体推广更多主流的产品，增加广告客户。
+						信用保证，保证自媒体和广告商以约定方式交易流量，无繁杂多交易后顾之忧。
+						个性化推荐引擎，自媒体自己控制展示频率，不伤害用户体验。</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="index-box" id="index-content2">
+			<div><h1>流量交换</h1></div>
+			<div><img src="/img/index/index1.png" /></div>
+			<div class="index-box-content">
+				<div class="index-box-left">
+					<h2>去中心化的流量交换</h2>
+				</div>
+				<div class="index-box-right">
+					<p>微信自媒体可以设置出让微信公众号中空余的位置来实现流量交换，流量交换的形式目前包括自定义菜单广告及每日跳转广告。微信公众号可以免费用自身流量换取别展示曝光的机会，同时也可以付费购买流量达到快速增长的目的。</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="index-box" id="index-content3">
+			<div><h1>自媒体接单</h1></div>
+			<div><img src="/img/index/index2.png" /></div>
+			<div class="index-box-content">
+				<div class="index-box-left">
+					<h2>全免费的自主简单服务</h2>
+				</div>
+				<div class="index-box-right">
+					<p>微信自媒体可以通过WePromote邀请广告商投放广告到微信公众号实现变现，WePromote不会收取任何费用，并提供流量效果检查服务。帮助微信自媒体推广以浏览量，点击量，下载量，交易量等多样化的方式帮助广告商推广。</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="index-box" id="index-content4">
+			<div><h1>邀请奖励</h1></div>
+			<div><img src="/img/index/index3.png" /></div>
+			<div class="index-box-content">
+				<div class="index-box-left">
+					<h2>邀请更多自媒体使用获得收益</h2>
+				</div>
+				<div class="index-box-right">
+					<p>目前注册的WePromote会员可以邀请其他微信公众号运营者使用WePromote，邀请者可以获得来自WePRomote的变现奖励，数量为被邀请者未来平台广告变现收益的5%。</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<button>向页面发送 HTTP POST 请求，并获得返回的结果</button>
+<script>
+	$("select").select2({dropdownCssClass: 'dropdown-inverse'});
+
+	function showSignin(){
+		document.getElementById("index-signup").style.opacity="0";
+		document.getElementById("index-signin").style.top="20px";
+		document.getElementById("index-signin").style.opacity="1";
+	}
+	function showSignup(){
+		document.getElementById("index-signin").style.opacity="0";
+		document.getElementById("index-signin").style.top="-100px";
+		document.getElementById("index-signup").style.opacity="1";
+	}
+	window.onscroll = function(){
+		var t = document.documentElement.scrollTop || document.body.scrollTop;
+		var ele = document.getElementById( "index-content-nav" );//要显示或者隐藏的元素
+		if( t >= 1250 ) {
+			ele.setAttribute('class','index-content-nav-fix');
+		} else {
+			ele.setAttribute('class','index-content-nav');
+		}
+	}
+
+	function reg()
+	{
+
+		$.ajax({
+			type: "POST",
+			url: "http://localhost:8080/member/reg",
+			data: "email="+$('#email_reg').val()+"&password="+$('#password_reg').val()+"&type="+$('#type option:selected').val(),
+			dataType: "json",
+			success: function(data) {
+				var result=JSON.parse(data);
+				if(result.status!='success') {
+					$('#message_reg').html(result.message);
+				}
+				else
+				{
+					location.href = "http://localhost:8080/redirect";
+				}
+			},
+			error: function(err) {
+				console.log("err");
+			}
+		});
+	}
+
+	function login()
+	{
+
+		$.ajax({
+			type: "POST",
+			url: "http://localhost:8080/member/login",
+			data: "email="+$('#email_login').val()+"&password="+$('#password_login').val(),
+			dataType: "json",
+			success: function(data) {
+				var result=JSON.parse(data);
+				if(result.status!='success') {
+					$('#message_login').html(result.message);
+				}
+				else
+				{
+					location.href = "http://localhost:8080/memberSystem";
+				}
+			},
+			error: function(err) {
+				$('#message_login').html("别忘了输入完整的账号密码噢");
+			}
+		});
+	}
+</script>
+
+
+</body>
+</html>

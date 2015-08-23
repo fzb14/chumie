@@ -1,0 +1,155 @@
+body {
+	background-color: #d4d4d4;
+}
+
+.adv-pic {
+	max-width: 100%;
+	height: auto;
+	bottom: 50px;
+	position: fixed;
+}
+
+.nav-text {
+	color: white;
+	padding-top: 13px;
+	padding-left: 40px;
+}
+
+.nav-text-black {
+	color: black;
+	padding-top: 13px;
+	padding-left: 40px;
+}
+
+.enter {
+	float: right;
+}
+
+.logo {
+	padding-top: 7px;
+	position: fixed;
+	width: 35px;
+	height: 35px;
+}
+
+.logo-pic {
+	max-width: 100%;
+	height: auto;
+}
+
+/*.back {
+	color: white;
+	padding-top: 13px;
+	max-width: 50px;
+}
+
+.close-button {
+	position: absolute;
+	top: 0;
+	left: 35px;
+}
+
+.nav-title {
+	position: absolute;
+	font-size: 20px;
+	top: 18px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}*/
+.profile-block {
+	position: relative;
+}
+
+.user-profile {
+	padding-top: 10px;
+}
+
+.user-name {
+	position: absolute;
+	display: inline;
+	left: 60px;
+	font-size: 18px;
+}
+
+.account-title {
+	position: absolute;
+	display: inline;
+	top: 30px;
+	left: 60px;
+	font-size: 13px;
+	color: #c2c2c2;
+}
+
+.account-name {
+	position: absolute;
+	display: inline;
+	top: 30px;
+	left: 120px;
+	font-size: 13px;
+	color: #c2c2c2;
+}
+
+.subtitle {
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 2px solid #d4d4d4;
+	color: #b2b2b2;
+}
+
+.jumbotron {
+	margin-bottom: 15px;
+	background:#fff;
+	padding:10px 20px;
+}
+
+.history-message {
+	margin-bottom: 50px;
+}
+
+.content-detail {
+	border: 2px solid #d4d4d4;
+	margin-bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.history-title {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #d4d4d4;
+	color: #888;
+	margin-left:8%;
+}
+
+.message-time {
+	color: #c2c2c2;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+.history-pic {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.row {
+	border-top: 2px solid #ddd;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.message-title h1{
+	margin:0;
+	font-size:22px;
+	margin-bottom: 8px;
+}
+.message-p p{
+	color:#ccc;
+	font-size:12px;
+	margin-bottom:6px;
+}
+.message-pic{
+	color:#bbb;
+}
