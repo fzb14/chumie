@@ -4,10 +4,9 @@
 	<meta charset="UTF-8">
 	<base href="/">
 
-	<title>Starter Node and Angular</title>
+	<title>Main</title>
 
 	<!-- CSS -->
-	<link href="libs/flat-ui/dist/css/flat-ui.css" rel="stylesheet">
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/side-menu.css">
 	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
@@ -16,11 +15,6 @@
 	<script src="libs/angular/angular.min.js"></script>
 	<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<!-- ANGULAR CUSTOM -->
-	<script src="libs/flat-ui/dist/js/vendor/jquery.min.js"></script>
-	<script src="libs/flat-ui/dist/js/vendor/video.js"></script>
-	<script src="libs/flat-ui/dist/js/flat-ui.min.js"></script>
-	<script src="libs/flat-ui/docs/assets/js/application.js"></script>
 
 
 	<script src="js/controllers/MainCtrl.js"></script>
@@ -34,9 +28,14 @@
 <body class="index-body" ng-app="sampleApp">
 	<div>
       <nav class="navbar navbar-inverse nav-fixed-top">
-        <div class = "container">
+        <div class = "container header-inline">
+        	<button type = "button" class = "navbar-toggle" data-toggle="collapse" data-target = "#nav">
+          		<span class = "icon-bar"></span>
+          		<span class = "icon-bar"></span>
+          		<span class = "icon-bar"></span>
+          	</button>
           <img src = "../img/logo.jpg" height="70px">
-          <div class = "newUserForm">
+          <div class = "newUserForm navbar-collapse collapse" id = "nav">
             <form class="form-signin" role="form">
               <div class="form-group">
                 <input type="text" class="userNameInput" placeholder="Username" required autofocus>

@@ -13,6 +13,7 @@
 .newUserForm {
     float: right;
     padding-top: 2vh;
+    width: 70%;
 }
 
 .navbar {
@@ -41,7 +42,6 @@
 .requi{
   color:red;
 }
-
 
 
 
