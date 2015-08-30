@@ -44,10 +44,53 @@
   color:red;
 }
 
+.slogen {
+    /*background-image: url("../img/slogen.jpg");
+    width: 100%;
+    height: 50vh;
+    background-position: center;*/
+    background: url(../img/slogen2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
+    width: 100%;
+    height: 50vh;
+}
 
+.slogen-block {
+    /*background-color: #b1b1b1;*/
+    opacity: 0.5;
+    padding-top: 5vh;
 
+    width: 80vw;
+    height: 30vh;
+}
 
+.container .jumbotron {
+    margin-top: 10vh;
+}
+
+.slogen-title h3{
+    /*position: static;*/
+    color: black;
+    text-align: center;
+}
+
+.slogen-btn {
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.slogen-btn .btn-default {
+    border-color: black;
+    color: black;
+    font-weight: 800;
+}
+.second-btn {
+    float: right;
+}
 
 
 
