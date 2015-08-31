@@ -92,10 +92,36 @@
     float: right;
 }
 
+.user-block .thumbnail {
+    margin-top: 3vh;
+    margin-bottom: 0;
+}
 
+.user-block .thumbnail .jumbotron {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 3vh;
+    height: 120px;
+    background: url(../img/userback.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
+.user-icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 15px;
+}
 
-
-
-
+.intro {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
