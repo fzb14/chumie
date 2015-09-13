@@ -1,6 +1,32 @@
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
 .navbar .container {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .userNameInput {
@@ -14,7 +40,6 @@
     float: right;
     padding-top: 2vh;
     width: 70%;
-    background-color: #f8f8f8;
 }
 
 .navbar {
@@ -23,10 +48,19 @@
 
 .navButtons {
     float: right;
+    margin-bottom: 15px;
 }
 
 .loginButton {
-    background-color: #d1d1d1;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.regButton {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
 }
 
 .content {
@@ -45,51 +79,65 @@
 }
 
 .slogen {
-    /*background-image: url("../img/slogen.jpg");
     width: 100%;
-    height: 50vh;
-    background-position: center;*/
-    background: url(../img/slogen2.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: auto;
+    position: relative;
+}
 
+.slogen .jumbotron {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 55%;
+    height: 50%;
+}
+
+.slogen-back {
     width: 100%;
-    height: 50vh;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .slogen-block {
     /*background-color: #b1b1b1;*/
-    opacity: 0.5;
-    padding-top: 5vh;
+    text-align: center;
+    position: absolute;
 
-    width: 80vw;
-    height: 30vh;
-}
-
-.container .jumbotron {
-    margin-top: 10vh;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .slogen-title h3{
     /*position: static;*/
-    color: black;
+    color: white;
     text-align: center;
+    margin-top: 0vh;
 }
 
 .slogen-btn {
-    padding-left: 20vw;
-    padding-right: 20vw;
+    text-align: center;
 }
 
 .slogen-btn .btn-default {
-    border-color: black;
-    color: black;
-    font-weight: 800;
+    border: none;
+    color: white;
+    background-color: rgba(96,96,96,0.7);
 }
+
+.slogen-btn .btn-default:hover  {
+    background: (200,200,200,0.8);
+}
+
+.slogen-btn .btn-default:focus  {
+    background: (160,160,160,0.7);
+}
+
+.slogen-btn .btn-default:active  {
+    background: (160,160,160,0.7);
+}
+
 .second-btn {
-    float: right;
 }
 
 .user-block .thumbnail {
