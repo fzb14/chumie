@@ -415,3 +415,53 @@
     margin-top: 10px;
 }
 
+.show-group {
+    width: 100%;
+}
+
+.show-item {
+    display: inline-block;
+    width: 33%;
+    padding-bottom: 30px;
+}
+
+.show-icons {
+    transform: scale(.7);
+}
+
+.show-title {
+    text-align: center;
+    margin-top: -9px;
+}
+
+.show-content {
+    text-align: center;
+}
+
+.show-icon-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background: url(../img/slogan.png) 0 0;
+}
+
+.show-icon-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background: url(../img/slogan.png) 400px 0;
+}
+
+.show-icon-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background: url(../img/slogan.png) 200px 0;
+}
+
