@@ -140,36 +140,278 @@
 .second-btn {
 }
 
-.user-block .thumbnail {
-    margin-top: 3vh;
-    margin-bottom: 0;
+.user-block {
+    margin-top: 15px;
+    padding-top: 15px;
+    background-image: url("../img/pat.png");
+    position: relative;
 }
 
-.user-block .thumbnail .jumbotron {
-    margin-top: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-bottom: 3vh;
-    height: 120px;
-    background: url(../img/userback.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.user-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
 }
 
 .user-icon {
     width: 100px;
     height: 100px;
-    position: absolute;
-    margin-left: 10vw;
-    margin-top: 15px;
+
+    margin-top: -50px;
+    margin-left: 5%;
+    border: solid white;
 }
 
-.intro {
+.user-back-img {
+    width: 100%;
+    height: auto;
+}
+
+.user-back-holds {
+    position: absolute;
+    top: 0;
+    color: white;
+    margin-top: -25px;
+}
+
+.user-back-hold-left {
     margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    position: absolute;
+}
+
+.user-back-hold-right {
+    margin-left: 70vw;
+    position: absolute;
+}
+
+.user-back-hold h3{
+    margin-left: 6px;
+    margin-bottom: -17px;
+}
+
+.user-name {
+    margin-top: -56px;
+    margin-left: 24%;
+}
+
+.user-name h3 {
+    font-size: 22px;
+    font-weight: 400;
+    border-left: 3px solid #ff0000;
+}
+
+.user-name p {
+    font-size: 13px;
+    margin-left: 2%;
+}
+
+.user-profile {
+    margin-left: 3%;
+}
+
+.user-profile p {
+    font-size: 10px;
+}
+
+.profile-right {
+    float: right;
+}
+
+.profile_1 {
+    position: absolute;
+    margin-left: -27%;
+}
+
+.gender {
+    margin-bottom: 3px;
+    margin-top: 9px;
+}
+
+.profile_2 {
+    position: absolute;
+    margin-left: -15%;
+    margin-top: 18px;
+}
+
+.profile_pipe {
+    position: absolute;
+    margin-left: -18%;
+    font-size: 28px;
+    font-weight: 100;
+    margin-top: 3px;
+    color: silver;
+}
+
+.contact_user {
+    margin-top: 10px;
+}
+
+.line_horizontal{
+    text-align: center;
+}
+
+.line_horizontal_left {
+    width: 49%;
+    height: 1px;
+    background-color: silver;
+}
+
+.line_dot {
+    display: inline-block;
+    position: absolute;
+    margin-top: -3px;
+}
+
+.line_horizontal_right {
+    width: 48%;
+    height: 1px;
+    background-color: silver;
+    float: right;
+}
+
+.page_left {
+    width: 50%;
+    padding-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.page_right {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 30px;
+}
+
+.layout-icon {
+    transform: scale(.8);
+    margin-top: -11px;
+    margin-left: -5%;
+}
+
+.about-me-icon {
+    width: 50px;
+    height: 50px;
+    background: url(../img/tico.png) 0 0;
+}
+
+.living-habit-icon {
+    width: 50px;
+    height: 50px;
+    background: url(../img/tico.png) 50px 0;
+}
+
+.my-tags-icon {
+    width: 50px;
+    height: 50px;
+    background: url(../img/tico.png) 100px 0;
+}
+
+.ideal-roommates-icon {
+    width: 50px;
+    height: 50px;
+    background: url(../img/tico.png) 150px 0;
+}
+
+.paragraph {
+    width: 70%;
+    margin-top: -71px;
+    margin-left: 21%;
+}
+
+.para-title {
+    font-size: 15px;
+}
+
+.para-text {
+    font-size: 10px;
+}
+
+.layout-block {
+    padding-top: 50px;
+}
+
+.label_tag {
+    line-height: 35px;
+}
+
+.habit-block {
+    padding-bottom: 30px;
+}
+
+.habit-icon {
+    transform: scale(.8);
+    margin-top: -11px;
+}
+
+.habit-time {
+    width: 34px;
+    height: 34px;
+    background: url(../img/cico.png) 0 0;
+}
+
+.habit-clean {
+    width: 34px;
+    height: 34px;
+    background: url(../img/cico.png) 68px 0;
+}
+
+.habit-noise {
+    width: 34px;
+    height: 34px;
+    background: url(../img/cico.png) 34px 0;
+}
+
+.habit-social {
+    width: 34px;
+    height: 34px;
+    background: url(../img/cico.png) 0 34px;
+}
+
+.habit-smoke {
+    width: 34px;
+    height: 34px;
+    background: url(../img/cico.png) 68px 34px;
+}
+
+.habit-etc {
+    width: 34px;
+    height: 34px;
+    background: url(../img/cico.png) 34px 34px;
+}
+
+.habit-text {
+    margin-top: -26px;
+    line-height: 20px;
+}
+
+.habit-text p {
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.habit-dot {
+    position: absolute;
+    top: 0;
+    margin-top: 7px;
+    margin-left: -12px;
+}
+
+.line_vertical {
+    width: 1px;
+    height: 100%;
+    background-color: silver;
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+}
+
+.layout-height {
+    position: relative;
+}
+
+.layout-height-clear {
+    padding-left: 3px; 
+    margin-top: 10px;
 }
 
