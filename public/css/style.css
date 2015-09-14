@@ -436,6 +436,7 @@
 
 .show-content {
     text-align: center;
+    font-size: 10px;
 }
 
 .show-icon-1 {
@@ -463,5 +464,42 @@
     width: 200px;
     height: 200px;
     background: url(../img/slogan.png) 200px 0;
+}
+
+.show-line {
+    height: 1px;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: silver;
+}
+
+.line-text {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -10px;
+    background-color: white;
+}
+
+.line-text p{
+    display: inline;
+}
+
+.user-num {
+    color: red;
+}
+
+.create-mine {
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
